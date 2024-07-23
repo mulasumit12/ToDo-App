@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <input type="text" id="input" placeholder="Enter name"><br>
+    <button id="button">add</button>
+</body>
+<script>
+    const button=document.getElementById('button');
+    button.onclick=()=>{
+        const input=document.getElementById('input').value; //ok
+
+
+        const display=document.createElement('p');//ok 
+        display.innerHTML=input;//ok
+
+        const body=document.getElementById('body');//ok
+        body.appendChild(display);
+        //alert(input);
+    }
+</script>
+</html>
